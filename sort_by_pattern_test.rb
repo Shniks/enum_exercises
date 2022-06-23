@@ -36,7 +36,8 @@ class SortByPatternTest < Minitest::Test
     skip
     distances = ["1cm", "9cm", "30cm", "4cm", "2cm"]
     transformed = []
-    # Your code goes here
+    distances.each do |distance|
+      transformed <<
     transformed = transformed.sort
     sorted = []
     transformed.each do |sort_key, distance|
